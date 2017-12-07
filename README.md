@@ -1,4 +1,4 @@
-# Distributed TensorFlow example code for O'Reilly Blog Post
+# Distributed TensorFlow Example (O'Reilly Blog Post)
 
 There are three pieces of example code here:
   
