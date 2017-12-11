@@ -7,7 +7,27 @@ There are three pieces of example code here:
   * a TensorFlowOnSpark program that can be used with Hops Hadoop
   
   * a Horovod program that can be used with Hops Hadoop
-  
+
+
+Hyperparameter Optimization using Spark/TensorFlow
+====
+
+We recommend that you do the following inside a new conda environment, but you may also run it without a virtual environment.
+
+
+    # Download and install standalone Spark
+    wget http://apache.mirrors.spacedump.net/spark/spark-2.2.1/spark-2.2.1-bin-hadoop2.7.tgz | tar zxf
+    export SPARK_HOME=$(pwd)/spark-2.2.1-bin-hadoop2.7
+    pip install pyspark==2.2.0
+    pip install tensorflow==1.4.0
+    pip install jupyter
+    git clone https://github.com/hopshadoop/distributed-tf.git
+    cd distributed-tf
+    jupyter notebook
+
+
+
 You can get more details on [TensorFlowOnSpark at its github repo](https://github.com/yahoo/TensorFlowOnSpark) and more details on [Horovod at its github repo](https://github.com/uber/horovod).
     
 For details on how to install and setup Hops, so that you can run all three programs in a Tour, go to [hops.io](http://www.hops.io).
+
