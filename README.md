@@ -20,6 +20,9 @@ We recommend that you do the following inside a new conda environment, but you m
     export SPARK_HOME=$(pwd)/spark-2.2.1-bin-hadoop2.7
     pip install pyspark==2.2.0
     pip install tensorflow==1.4.0
+    # Pixiedust will try and install Scala for you.
+    # If you do not have Scala installed, or you do not have the version of Scala supported by your Apache Spark install, the installer downloads the appropriate version of Scala for you.
+    pip install pixiedust
     pip install jupyter
     git clone https://github.com/hopshadoop/distributed-tf.git
     cd distributed-tf
