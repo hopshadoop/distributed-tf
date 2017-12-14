@@ -16,7 +16,8 @@ We recommend that you do the following inside a new conda environment, but you m
 
 
     # Download and install standalone Spark
-    wget http://apache.mirrors.spacedump.net/spark/spark-2.2.1/spark-2.2.1-bin-hadoop2.7.tgz | tar zxf
+    wget http://apache.mirrors.spacedump.net/spark/spark-2.2.1/spark-2.2.1-bin-hadoop2.7.tgz
+    tar zxf spark-2.2.1-bin-hadoop2.7.tgz
     export SPARK_HOME=$(pwd)/spark-2.2.1-bin-hadoop2.7
     export PATH=$SPARK_HOME/bin:$PATH
     pip install pyspark
@@ -25,9 +26,17 @@ We recommend that you do the following inside a new conda environment, but you m
     # If you do not have Scala installed, or you do not have the version of Scala supported by your Apache Spark install, the installer downloads the appropriate version of Scala for you.
     pip install pixiedust
     pip install jupyter
+    jupyter pixiedust install
     git clone https://github.com/hopshadoop/distributed-tf.git
     cd distributed-tf
-    jupyter notebook
+    
+    export PYSPARK_DRIVER_PYTHON=jupyter
+    export PYSPARK_DRIVER_PYTHON_OPTS='notebook'
+    pyspark
+    #The 'pyspark' command should start a Jupyter Notebook in your web browser. 
+    #You can then create a new 'pyspark' notebook and test it using this code
+    
+    
 
 
 
