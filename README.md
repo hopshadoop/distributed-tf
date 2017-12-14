@@ -18,6 +18,7 @@ We recommend that you do the following inside a new conda environment, but you m
     # Download and install standalone Spark
     wget http://apache.mirrors.spacedump.net/spark/spark-2.2.1/spark-2.2.1-bin-hadoop2.7.tgz | tar zxf
     export SPARK_HOME=$(pwd)/spark-2.2.1-bin-hadoop2.7
+    export PATH=$SPARK_HOME/bin:$PATH
     pip install pyspark
     pip install tensorflow==1.4.0
     # Pixiedust will try and install Scala for you.
