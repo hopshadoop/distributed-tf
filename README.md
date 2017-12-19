@@ -49,5 +49,9 @@ Horovod
 
 More details on [Horovod at its github repo](https://github.com/uber/horovod).
     
+    
+Distributed TensorFlow on Hops
+=====================
+
 For details on how to install and setup Hops, so that you can run all three programs in a Tour, go to [hops.io](http://www.hops.io).
 
