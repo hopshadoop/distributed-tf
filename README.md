@@ -12,6 +12,7 @@ There are three pieces of example code here:
 Hyperparameter Optimization using Spark/TensorFlow
 ====
 
+This has been tested on a Ubuntu 16.04 machine, but should work on other platforms.
 We recommend that you do the following inside a new conda environment, but you may also run it without a virtual environment.
 
 
